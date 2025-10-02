@@ -57,10 +57,3 @@ void base10to2(int base10, std::vector<int> &v_base2) {
   }
   return base10to2(quotient, v_base2);
 }
-<<<<<<< HEAD
-
-  }
-  return base10to2(quotient);
-}
-=======
->>>>>>> cb1b4f6 (Just made it better)
