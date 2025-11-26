@@ -3,7 +3,7 @@
  * TODO: Just base 10 is stupid! Modify it (or create another file, whatever) so
  * that it converts all letters too, add support for letters. Hexadecimals only
  * goes until 'F', maybe convert letters to int then convert to binary.
- * 'Segmentation fault' for input '0', fix this shit
+ * 'Segmentation fault' for input '0'
  */
 #include <iostream>
 #include <vector>
@@ -42,12 +42,7 @@ int main(void) {
  * by recursivily do integer divisions by 2 and adding the last "quotient" (1)
  * to vector. The values "rests" and the last "quotient" are added through
  * insert method.
- *
- * TODO: Excuse-me sir 🧐, do you think I have a shitload of RAM?
- * BECAUSE I DON'T!!! This recursive function looks cool but if the input is too
- * much then when are adding a bunch of stuff to stack. Maybe I should've used a
- * for loop instead. I don't know, I will make some tests...
- */
+*/
 
 void base10to2(int base10, std::vector<int> &v_base2) {
   // If "base10" == 1, so no more operation is needed, just add it to vector
@@ -58,7 +53,7 @@ void base10to2(int base10, std::vector<int> &v_base2) {
 
   int base = 2;
   int rest = base10 % 2;
-  int quotient = (base10 - (base10 % base)) / base; // It's just basic math, yo!
+  int quotient = (base10 - (base10 % base)) / base; // just basic math
 
   v_base2.insert(v_base2.begin(), rest);
 
